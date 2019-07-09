@@ -19,12 +19,49 @@
  <h1>Register here!</h1>
  <p>Fill in your name and email address, then click <strong>Submit</strong> to register.</p>
  <form method="post" action="index.php" enctype="multipart/form-data" >
-       Name  <input type="text" name="name" id="name"/></br></br>
-       Email <input type="text" name="email" id="email"/></br></br>
-       Job <input type="text" name="job" id="job"/></br></br>
-       <input type="submit" name="submit" value="Submit" />
-       <input type="submit" name="load_data" value="Load Data" />
+     <table>
+        <tr>
+            <td>
+                Nama
+            </td>
+            <td>
+                :
+            </td>
+            <td>
+                <input type="text" name="name" id="name "/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Email
+            </td>
+            <td>
+                :
+            </td>
+            <td>
+                <input type="text" name="email" id="email"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Job
+            </td>
+            <td>
+                :
+            </td>
+            <td>
+                <input type="text" name="job" id="job"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type="submit" name="submit" value="Submit" />
+                <input type="submit" name="load_data" value="Load Data" />
+            </td>
+        </tr>
+     </table>
  </form>
+ <div>
  <?php
     $host = "azurlearning.database.windows.net";
     $user = "achmadsz";
@@ -85,5 +122,7 @@
         }
     }
  ?>
+    </table>
+ </div>
  </body>
  </html>
