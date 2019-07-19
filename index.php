@@ -16,7 +16,7 @@
  </style>
  </head>
  <body>
- <h1>Register here!</h1>
+ <h1>New Register here!</h1>
  <p>Fill in your name and email address, then click <strong>Submit</strong> to register.</p>
  <form method="post" action="index.php" enctype="multipart/form-data" >
      <table>
@@ -63,10 +63,10 @@
  </form>
  <div>
  <?php
-    $host = "azurlearning.database.windows.net";
+    $host = "serversubmission.database.windows.net";
     $user = "achmadsz";
     $pass = "password.1";
-    $db = "submissionAzure1DB";
+    $db = "submission1DB";
 
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
